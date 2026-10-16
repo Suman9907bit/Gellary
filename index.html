@@ -1,215 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gallery - Jana Online Service</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #1e1e2f;
-      color: #fff;
-      padding: 40px 20px;
-    }
-    h1 {
-      text-align: center;
-      font-weight: 700;
-      font-size: 2.8rem;
-      margin-bottom: 40px;
-      color: #66ccff;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.7);
-    }
-    .gallery-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .gallery-item {
-      position: relative;
-      overflow: hidden;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0, 204, 255, 0.4);
-      cursor: pointer;
-      background: #222238;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .gallery-item:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 30px rgba(0, 204, 255, 0.7);
-    }
-    .gallery-item img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      display: block;
-      border-radius: 15px;
-      transition: filter 0.3s ease;
-    }
-    .gallery-item:hover img {
-      filter: brightness(0.75);
-    }
-    .caption {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 15px 20px;
-      background: rgba(0, 204, 255, 0.8);
-      color: #000;
-      font-weight: 600;
-      font-size: 1.1rem;
-      border-bottom-left-radius: 15px;
-      border-bottom-right-radius: 15px;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-    .gallery-item:hover .caption {
-      opacity: 1;
-    }
-
-    /* Responsive */
-    @media(max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-      .gallery-item img {
-        height: 140px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <h1>আমাদের গ্যালারি</h1>
-  <div class="gallery-container">
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipOSGa8fDjoWTJNXoVcIlMB93JeW5-tCORJyRiWr=s680-w680-h510-rw" alt="Gallery Image 1" />
-      <div class="caption">Office Entry</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipM7gv7GnmfMx-lMaqlGwInq3xfvFwtoVW2nptZj=s680-w680-h510-rw" alt="Gallery Image 2" />
-      <div class="caption">Office work</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipOeueaKyx6nHV85mNe3oXLXmnoZl3UfsVo5tMjY=s680-w680-h510-rw" alt="Gallery Image 3" />
-      <div class="caption">Business planing Moment</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipPv06wPV66wup1E1KAq9PZNXTopchfJNa7ZcjhU=s680-w680-h510-rw" alt="Gallery Image 4" />
-      <div class="caption">Resturent denar time</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipOav-4_twlldr1Ir5ixQWUJQmXytze1drX6zu6f=s680-w680-h510-rw" alt="Gallery Image 5" />
-      <div class="caption">Proyla no Nodir par</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipPRGKft7Efyd_pCqgnjmr5Xd5QGVDjGWuHWTM2w=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Office work</div>
-    </div>
-
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipPxQbjmzuFbwhDKXIG9Jb5oNJw_YIdei-7YZ6-V=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption"> Resturente Timepass</div>
-    </div>
-
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipM4OVYx2WqjpSDMMJpLsWUhocVePM5ua-tQ2sUg=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">System repearing moment</div>
-    </div>
-
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipP7gLmyM4k5uX2VF6LsZUxtYEt_bms7wRytHV_S=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Purir mondire ghurte giye....</div>
-    </div>
-
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipOHzNG_hg9PIv9O2yj_AhioiMtiXbb3Z9vxuqgg=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Bristir mahurto anuvob kora </div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipNBjKblcs45rFqItQSQpbmsecIzwOh-n-ejWlKC=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Swarasati pujor somoy</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipNKtLU0DjGY6xYeYIyI3u0Tk-DPnzGeSUcpyGfO=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Puri giye singel anuvob kora </div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipPoDourq4WDyL05fjvxOhoH-762sF4FAFUWzX1_=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Bakkhali giyeo singel </div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipPWL6oF2NyvEavTFyoW6V2UY8Q0FZfOQ_wNpjv7=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Samudra dekhar somoy</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipMqThyr6yuYK13EWtm3UBqoKJ_GQ_jHh8SjbDXQ=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Prokitir Proti ek adbhut valobasa</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipPJ1RbHg0hktStxPtx3nZv5lQWXKGv8zH8DDFYk=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Swarasati pujoy schoole giye</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipMTLmVeQ-3FpmpHrFEFJbdsiHO_-dQyrg0IXKJB=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Party korar somoy </div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipOilIr7xR3vqAbVUJGqXdpbMnToNQB4dDg1cZ6-=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Dighay giye snan korar somoy</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipNQZg-3jQg_I7MpQVPG-iZ72C9R2lRAIwKGJCIb=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Free time bose thaka</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipPtKeFwFTxNVtuqL7NfG_dO38aZMSdWfibmo8WO=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Baba Ma (Father and Monther)</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipPUpTf-swSnV0W3PxNFzLLfiLRtRzqrYFFVXfof=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Kaje faki diye ghurte jaoya</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipMMxfHanKTxUvbQ9FZZnl6TWFgGfPe-OBERPJkA=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">singel Hero </div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipPj7CUgyXRmpc4QR2f0GYp0ZvY_OSzamSpNXM5D=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Pujor somoy ananda korlam</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipMWWhe9dC6y5uiSUgzAC3Xk04-U7waUhtxe11g1=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Samudre sobai ek sathe snan orar somoy</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipOORUjUrO7merQQyDk6ZqhkJsxAfW1Ci-C-CleS=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Mathay tantion niye natural time pass</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipNbaZAHvrkaRh8Bihl7bcnL7Sodx7k2eHk56O8L=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Chobi sudhu noy   eamar porichoy</div>
-    </div><div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipPWFhiCHlkp9PxMRAh5vD_E-q88qI6i83qcUiNj=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Sudhu Plastiker gach niye vabna </div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipNoOclAhUWRIObTFcaAtTQlj-CpqJAuE7m3tmM1=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Eita chorte parlam na. photo tule sadh miteye nilam </div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipPaQ9CT4fI5eombY0X6A97GNq-dzW2Yryc2w6j5=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">pase bosar keo nei </div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://lh3.googleusercontent.com/p/AF1QipMe9E8lXZ0vDOl7MF_KO4PJvLOrx0BMBPQ5UVrS=s680-w680-h510-rw" alt="Gallery Image 6" />
-      <div class="caption">Puri diye chosma ta kinlam</div>
-    </div>
-   
-
-  </div>
-</body>
-</html>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#071a2e"><meta name="description" content="Jana Online Service-এর স্মৃতি, কাজ ও বিশেষ মুহূর্তের ফটো গ্যালারি।">
+<title>Gallery | Jana Online Service</title>
+<style>
+:root{--bg:#071426;--panel:rgba(15,34,57,.78);--line:rgba(148,205,255,.16);--cyan:#65e4f4;--blue:#6b9cff;--text:#eff8ff;--muted:#a9bdd2;--shadow:0 22px 60px rgba(0,0,0,.28)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(ellipse at 15% 0%,rgba(37,143,196,.22),transparent 38%),radial-gradient(ellipse at 100% 28%,rgba(75,95,210,.17),transparent 35%),var(--bg);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,#000,transparent 85%)}
+.ambient{position:fixed;width:300px;height:300px;border-radius:50%;filter:blur(85px);opacity:.12;pointer-events:none;animation:float 12s ease-in-out infinite alternate;background:#31d6f0;top:35%;left:-150px}.ambient.two{background:#6d70ff;left:auto;right:-180px;top:60%;animation-delay:-5s}
+@keyframes float{to{transform:translate(80px,-45px) scale(1.2)}}@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}@keyframes shimmer{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+.wrap{width:min(1240px,calc(100% - 36px));margin:auto;position:relative}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.1px}.brandmark{height:42px;width:42px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(135deg,#5ee7f4,#658cff);color:#061629;font-size:19px;box-shadow:0 8px 25px #3ccde533}.brand small{display:block;color:var(--muted);font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-top:2px}.live{display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:#ffffff08;border-radius:30px;padding:9px 13px;color:#cce6f8;font-size:12px}.dot{height:7px;width:7px;background:#4ee6a2;border-radius:50%;box-shadow:0 0 12px #4ee6a2;animation:pulse 1.8s infinite}@keyframes pulse{50%{box-shadow:0 0 0 6px #4ee6a21a}}
+.hero{text-align:center;padding:66px 0 32px;animation:rise .8s both}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #70dff32c;background:#54d8ed0d;color:#a8f2ff;padding:8px 13px;border-radius:30px;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(34px,6vw,66px);line-height:1.08;letter-spacing:-2px;margin:22px 0 14px;font-weight:850}.gradient{background:linear-gradient(100deg,#fff 5%,#86eafa 45%,#8daaff 85%);background-size:200% auto;color:transparent;background-clip:text;-webkit-background-clip:text;animation:shimmer 7s linear infinite}.hero p{max-width:590px;margin:0 auto;color:var(--muted);font-size:15px;line-height:1.8}.stats{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:26px}.stat{border:1px solid var(--line);background:#ffffff06;padding:10px 15px;border-radius:13px;font-size:12px;color:#b8cde0}.stat strong{color:white;font-size:15px;margin-right:5px}
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:26px 0 20px;animation:rise .8s .1s both}.search{flex:1;max-width:420px;position:relative}.search span{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:#8ba9c4;font-size:18px}.search input{width:100%;padding:14px 15px 14px 44px;border:1px solid var(--line);border-radius:14px;outline:none;color:white;background:#0b2038b8;font:inherit;font-size:13px;transition:.25s}.search input:focus{border-color:#67dff0;box-shadow:0 0 0 4px #67dff014}.count{font-size:12px;color:var(--muted);white-space:nowrap}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding-bottom:54px}.card{min-width:0;position:relative;overflow:hidden;border:1px solid var(--line);border-radius:20px;background:var(--panel);box-shadow:0 8px 28px #00000016;cursor:pointer;animation:rise .65s both;transition:transform .35s,border-color .35s,box-shadow .35s;isolation:isolate}.card:hover{transform:translateY(-7px);border-color:#72dff05c;box-shadow:0 20px 45px #0005,0 0 25px #48d9f00b}.photo{position:relative;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(120deg,#122e49,#1a2548)}.photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 48%,#06132355);pointer-events:none}.photo img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .5s}.card:hover .photo img{transform:scale(1.07);filter:saturate(1.12)}.photo .number{position:absolute;top:13px;left:13px;z-index:1;border:1px solid #ffffff42;background:#0714268c;backdrop-filter:blur(12px);border-radius:9px;padding:6px 9px;font-size:10px;color:#eafaff;letter-spacing:1px}.zoom{position:absolute;right:13px;top:13px;z-index:1;width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:#06142699;border:1px solid #ffffff38;color:white;opacity:0;transform:translateY(5px);transition:.25s}.card:hover .zoom{opacity:1;transform:translateY(0)}.caption{padding:16px 17px 17px;display:flex;justify-content:space-between;align-items:center;gap:10px}.caption h2{font-size:14px;line-height:1.5;font-weight:650;margin:0;color:#e8f4ff;overflow-wrap:anywhere}.arrow{color:#75deee;font-size:20px;flex-shrink:0;transition:transform .25s}.card:hover .arrow{transform:translate(3px,-3px)}.empty{grid-column:1/-1;text-align:center;padding:55px 20px;border:1px dashed var(--line);border-radius:18px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:24px 0 30px;color:#8da5bd;font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}footer strong{color:#cfe7f8}
+.viewer{position:fixed;inset:0;z-index:10;display:none;align-items:center;justify-content:center;padding:20px;background:#020814eF;backdrop-filter:blur(16px)}.viewer.open{display:flex;animation:fade .2s ease}@keyframes fade{from{opacity:0}to{opacity:1}}.viewer-inner{width:min(1050px,100%);max-height:95vh;display:flex;flex-direction:column;align-items:center;gap:12px}.viewer img{max-width:100%;max-height:78vh;object-fit:contain;border-radius:12px;box-shadow:var(--shadow)}.viewer-caption{color:#e8f7ff;font-size:14px;text-align:center}.viewer-controls{display:flex;align-items:center;gap:10px}.vbtn{width:42px;height:42px;border:1px solid #ffffff30;border-radius:13px;background:#ffffff12;color:white;font-size:21px;cursor:pointer}.vbtn:hover{background:#ffffff25}.close{position:fixed;top:18px;right:18px}.noscript{margin:30px auto;color:#ffd4d4;text-align:center}
+@media(min-width:1000px){.gallery{grid-template-columns:repeat(4,minmax(0,1fr))}.hero{padding-top:74px}.gallery .card:nth-child(7n+2){animation-delay:.05s}.gallery .card:nth-child(7n+3){animation-delay:.1s}.gallery .card:nth-child(7n+4){animation-delay:.15s}}
+@media(max-width:760px){.wrap{width:calc(100% - 26px)}.topbar{height:66px}.brandmark{height:38px;width:38px}.live{font-size:10px;padding:8px 10px}.hero{padding:48px 0 22px}.hero h1{letter-spacing:-1.3px;margin-top:18px}.hero p{font-size:13px;padding:0 5px}.toolbar{margin-top:22px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{border-radius:15px}.caption{padding:12px 11px}.caption h2{font-size:12px}.photo .number{top:8px;left:8px;font-size:9px;padding:5px 7px}.zoom{display:none}.stats{gap:7px}.stat{padding:8px 10px;font-size:11px}}
+@media(max-width:390px){.gallery{gap:9px}.wrap{width:calc(100% - 20px)}.caption{padding:10px 9px}.caption h2{font-size:11px}.arrow{font-size:16px}.hero h1{font-size:34px}.count{font-size:10px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style></head><body><div class="ambient"></div><div class="ambient two"></div>
+<div class="wrap"><header class="topbar"><div class="brand"><div class="brandmark">J</div><div>Jana Online Service<small>Moments · Memories · Work</small></div></div><div class="live"><i class="dot"></i> PHOTO GALLERY</div></header>
+<section class="hero"><div class="eyebrow">OUR GALLERY</div><h1><span class="gradient">আমাদের গ্যালারি</span></h1><p>কাজ, ভ্রমণ আর জীবনের সুন্দর মুহূর্ত—সব স্মৃতি এক জায়গায়। ছবি খুলে বড় করে দেখুন।</p><div class="stats"><div class="stat"><strong id="totalCount">00</strong> Photos</div><div class="stat"><strong>HD</strong> Preview</div><div class="stat"><strong>100%</strong> Mobile Friendly</div></div></section>
+<div class="toolbar"><label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="ছবি খুঁজুন..." aria-label="ছবি খুঁজুন"></label><div class="count" id="resultCount">ছবি লোড হচ্ছে...</div></div><main class="gallery" id="gallery" aria-label="Photo gallery"></main>
+<footer><span>© <span id="year"></span> <strong>Jana Online Service</strong></span><span>Made with care · Responsive Gallery</span></footer></div>
+<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="ছবির বড় ভিউ"><button class="vbtn close" id="closeViewer" aria-label="বন্ধ করুন">×</button><div class="viewer-inner"><img id="viewerImage" alt="বড় ছবি"><div class="viewer-caption" id="viewerCaption"></div><div class="viewer-controls"><button class="vbtn" id="prevImage" aria-label="আগের ছবি">‹</button><span class="count" id="viewerCount"></span><button class="vbtn" id="nextImage" aria-label="পরের ছবি">›</button></div></div></div>
+<script>
+'use strict';
+const photos = [{"src": "https://lh3.googleusercontent.com/p/AF1QipOSGa8fDjoWTJNXoVcIlMB93JeW5-tCORJyRiWr=s680-w680-h510-rw", "caption": "Office Entry"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipM7gv7GnmfMx-lMaqlGwInq3xfvFwtoVW2nptZj=s680-w680-h510-rw", "caption": "Office work"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipOeueaKyx6nHV85mNe3oXLXmnoZl3UfsVo5tMjY=s680-w680-h510-rw", "caption": "Business planing Moment"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipPv06wPV66wup1E1KAq9PZNXTopchfJNa7ZcjhU=s680-w680-h510-rw", "caption": "Resturent denar time"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipOav-4_twlldr1Ir5ixQWUJQmXytze1drX6zu6f=s680-w680-h510-rw", "caption": "Proyla no Nodir par"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipPRGKft7Efyd_pCqgnjmr5Xd5QGVDjGWuHWTM2w=s680-w680-h510-rw", "caption": "Office work"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipPxQbjmzuFbwhDKXIG9Jb5oNJw_YIdei-7YZ6-V=s680-w680-h510-rw", "caption": "Resturente Timepass"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipM4OVYx2WqjpSDMMJpLsWUhocVePM5ua-tQ2sUg=s680-w680-h510-rw", "caption": "System repearing moment"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipP7gLmyM4k5uX2VF6LsZUxtYEt_bms7wRytHV_S=s680-w680-h510-rw", "caption": "Purir mondire ghurte giye...."}, {"src": "https://lh3.googleusercontent.com/p/AF1QipOHzNG_hg9PIv9O2yj_AhioiMtiXbb3Z9vxuqgg=s680-w680-h510-rw", "caption": "Bristir mahurto anuvob kora"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipNBjKblcs45rFqItQSQpbmsecIzwOh-n-ejWlKC=s680-w680-h510-rw", "caption": "Swarasati pujor somoy"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipNKtLU0DjGY6xYeYIyI3u0Tk-DPnzGeSUcpyGfO=s680-w680-h510-rw", "caption": "Puri giye singel anuvob kora"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipPoDourq4WDyL05fjvxOhoH-762sF4FAFUWzX1_=s680-w680-h510-rw", "caption": "Bakkhali giyeo singel"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipPWL6oF2NyvEavTFyoW6V2UY8Q0FZfOQ_wNpjv7=s680-w680-h510-rw", "caption": "Samudra dekhar somoy"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipMqThyr6yuYK13EWtm3UBqoKJ_GQ_jHh8SjbDXQ=s680-w680-h510-rw", "caption": "Prokitir Proti ek adbhut valobasa"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipPJ1RbHg0hktStxPtx3nZv5lQWXKGv8zH8DDFYk=s680-w680-h510-rw", "caption": "Swarasati pujoy schoole giye"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipMTLmVeQ-3FpmpHrFEFJbdsiHO_-dQyrg0IXKJB=s680-w680-h510-rw", "caption": "Party korar somoy"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipOilIr7xR3vqAbVUJGqXdpbMnToNQB4dDg1cZ6-=s680-w680-h510-rw", "caption": "Dighay giye snan korar somoy"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipNQZg-3jQg_I7MpQVPG-iZ72C9R2lRAIwKGJCIb=s680-w680-h510-rw", "caption": "Free time bose thaka"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipPtKeFwFTxNVtuqL7NfG_dO38aZMSdWfibmo8WO=s680-w680-h510-rw", "caption": "Baba Ma (Father and Monther)"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipPUpTf-swSnV0W3PxNFzLLfiLRtRzqrYFFVXfof=s680-w680-h510-rw", "caption": "Kaje faki diye ghurte jaoya"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipMMxfHanKTxUvbQ9FZZnl6TWFgGfPe-OBERPJkA=s680-w680-h510-rw", "caption": "singel Hero"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipPj7CUgyXRmpc4QR2f0GYp0ZvY_OSzamSpNXM5D=s680-w680-h510-rw", "caption": "Pujor somoy ananda korlam"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipMWWhe9dC6y5uiSUgzAC3Xk04-U7waUhtxe11g1=s680-w680-h510-rw", "caption": "Samudre sobai ek sathe snan orar somoy"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipOORUjUrO7merQQyDk6ZqhkJsxAfW1Ci-C-CleS=s680-w680-h510-rw", "caption": "Mathay tantion niye natural time pass"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipNbaZAHvrkaRh8Bihl7bcnL7Sodx7k2eHk56O8L=s680-w680-h510-rw", "caption": "Chobi sudhu noy eamar porichoy"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipPWFhiCHlkp9PxMRAh5vD_E-q88qI6i83qcUiNj=s680-w680-h510-rw", "caption": "Sudhu Plastiker gach niye vabna"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipNoOclAhUWRIObTFcaAtTQlj-CpqJAuE7m3tmM1=s680-w680-h510-rw", "caption": "Eita chorte parlam na. photo tule sadh miteye nilam"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipPaQ9CT4fI5eombY0X6A97GNq-dzW2Yryc2w6j5=s680-w680-h510-rw", "caption": "pase bosar keo nei"}, {"src": "https://lh3.googleusercontent.com/p/AF1QipMe9E8lXZ0vDOl7MF_KO4PJvLOrx0BMBPQ5UVrS=s680-w680-h510-rw", "caption": "Puri diye chosma ta kinlam"}];
+const gallery=document.getElementById('gallery'), searchInput=document.getElementById('searchInput');
+const viewer=document.getElementById('viewer'), viewerImage=document.getElementById('viewerImage'), viewerCaption=document.getElementById('viewerCaption'), viewerCount=document.getElementById('viewerCount');
+let filtered=photos.slice(), currentIndex=0, lastFocus=null;
+document.getElementById('totalCount').textContent=String(photos.length).padStart(2,'0');document.getElementById('year').textContent=new Date().getFullYear();
+function render(){const q=searchInput.value.trim().toLocaleLowerCase();filtered=photos.map((p,i)=>({...p,originalIndex:i})).filter(p=>p.caption.toLocaleLowerCase().includes(q));document.getElementById('resultCount').textContent=`${filtered.length} টি ছবি`;gallery.replaceChildren();if(!filtered.length){const e=document.createElement('div');e.className='empty';e.textContent='কোনো ছবি পাওয়া যায়নি। অন্য শব্দ দিয়ে খুঁজুন।';gallery.append(e);return;}const frag=document.createDocumentFragment();filtered.forEach((p,i)=>{const card=document.createElement('article');card.className='card';card.tabIndex=0;card.setAttribute('role','button');card.setAttribute('aria-label',p.caption+' — বড় করে দেখুন');card.style.animationDelay=Math.min(i%12,8)*35+'ms';const photo=document.createElement('div');photo.className='photo';const img=document.createElement('img');img.src=p.src;img.alt=p.caption;img.loading=i<6?'eager':'lazy';img.decoding='async';img.referrerPolicy='no-referrer';img.onerror=()=>{img.style.opacity='.2';};const num=document.createElement('span');num.className='number';num.textContent=String(p.originalIndex+1).padStart(2,'0');const zoom=document.createElement('span');zoom.className='zoom';zoom.textContent='↗';photo.append(img,num,zoom);const cap=document.createElement('div');cap.className='caption';const title=document.createElement('h2');title.textContent=p.caption||'Jana Online Service';const arrow=document.createElement('span');arrow.className='arrow';arrow.textContent='↗';cap.append(title,arrow);card.append(photo,cap);card.addEventListener('click',()=>openViewer(i));card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openViewer(i);}});frag.append(card);});gallery.append(frag);}
+function openViewer(i){currentIndex=i;lastFocus=document.activeElement;updateViewer();viewer.classList.add('open');document.body.style.overflow='hidden';document.getElementById('closeViewer').focus();}
+function updateViewer(){const p=filtered[currentIndex];if(!p)return;viewerImage.src=p.src;viewerImage.alt=p.caption;viewerCaption.textContent=p.caption;viewerCount.textContent=`${currentIndex+1} / ${filtered.length}`;}
+function closeViewer(){viewer.classList.remove('open');document.body.style.overflow='';if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+function move(step){if(!filtered.length)return;currentIndex=(currentIndex+step+filtered.length)%filtered.length;updateViewer();}
+searchInput.addEventListener('input',render);document.getElementById('closeViewer').addEventListener('click',closeViewer);document.getElementById('prevImage').addEventListener('click',()=>move(-1));document.getElementById('nextImage').addEventListener('click',()=>move(1));viewer.addEventListener('click',e=>{if(e.target===viewer)closeViewer();});document.addEventListener('keydown',e=>{if(!viewer.classList.contains('open'))return;if(e.key==='Escape')closeViewer();if(e.key==='ArrowLeft')move(-1);if(e.key==='ArrowRight')move(1);});let touchX=0;viewer.addEventListener('touchstart',e=>{touchX=e.changedTouches[0].screenX;},{passive:true});viewer.addEventListener('touchend',e=>{const dx=e.changedTouches[0].screenX-touchX;if(Math.abs(dx)>60)move(dx<0?1:-1);},{passive:true});render();
+</script></body></html>
